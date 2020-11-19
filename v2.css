@@ -1,19 +1,21 @@
 .flex-container {
-    display: inline-flex;
-    background-color: white;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+  display: inline-flex;
+  background-color: white;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 
-  }
+}
   
-  .flex-container > div {
-    background-color: green;
-    width: 20%;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 40px;
-    color: white;
+.flex-container > div {
+  background-color: green;
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 40px;
+  color: white;
+}
 
-  }
+
+
