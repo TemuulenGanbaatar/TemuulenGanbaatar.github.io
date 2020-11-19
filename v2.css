@@ -1,3 +1,4 @@
+/*
 .flex-container {
   display: inline-flex;
   background-color: white;
@@ -16,6 +17,18 @@
   font-size: 40px;
   color: white;
 }
+*/
 
+  
+.card{
+  float: left;
+  width: 23%;
+  margin: 1%;
+  height: 24vw;
+  background-color:rgb(129, 41, 41);
+}
+.flipped{
+  background-color:blue;
+}
 
 
