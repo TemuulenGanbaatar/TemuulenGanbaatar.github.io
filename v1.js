@@ -1,7 +1,36 @@
+/*
+1) leeres Array zum Speichern der aufgedeckten Karten
+2) Karten richtig erzeugen (type) [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
+3) Karten mischen (shuffle)
+4) Karten zum Deck hinzufügen
+5) Klick Eventhandler
+6) Kartenlogik
+    6.1) prüfen wie viele Karten aufgedeckt sind? (0,1,2)
+    6.2) Wenn weniger als 2 -> aufdecken
+    6.3) Erkennen ob 2 gleiche Karten aufdeckt wurde -> wenn
+        gleich dann -> found; wenn nicht gleich -> verdecken
+
+*/
 const numberCards = 16
+//1)
 let openedCards = []
 
 let p = document.querySelector('.deck')
+
+//2)
+//TODO: Array erzeugen mit durchmischten Karten (16 Karten, 8 Typen(1-8))
+const randomarray = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
+
+for(let i = randomarray.length-1; i>0; i--){
+    const j = Math.floor(Math.random() * i)
+    const temp = randomarray[i]
+    array[i] = randomarray[j]
+    array[j] = temp
+  }
+
+
+
+
 for (let index = 0; index < numberCards; index++) {
         let c = document.createElement('div')
         c.innerHTML = "Hallo "+ (index + 1)
