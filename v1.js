@@ -34,16 +34,19 @@ for (let index = 0; index < numberCards/2; index++) {
     cardTypes.push(index+1)
     cardTypes.push(index+1)
 }
+let p = document.querySelector('.deck')
 
-
+cardTypes = shuffle(cardTypes)
+let p = document.querySelector('.deck')
 for (let index = 0; index < numberCards; index++) {
         let c = document.createElement('div')
-        c.innerHTML = "Hallo "+ (index + 1)
-        c.type = index % 2 + 1
+        c.innerHTML = cardTypes[index]
+        c.type = cardTypes[index]
         c.className="card"
         c.addEventListener('click',flipp)
         p.appendChild(c)
 }
+
 
 
 function flipp(event){
@@ -57,7 +60,6 @@ function flipp(event){
 function openCard(c){
     alert(c.innerHTML)
 }
-
 
 function shuffle(arra1) {
     var ctr = arra1.length, temp, index;
