@@ -18,6 +18,6 @@ function flipp(event){
     //this.classList.toggle('flipped')
 }
 function openCard(c){
-    alert("open")
+    alert(c.innerHTML)
 }
 
