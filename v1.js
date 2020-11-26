@@ -27,10 +27,11 @@ for(let i = randomarray.length-1; i>0; i--){
     randomarray[i] = randomarray[j]
     randomarray[j] = temp
   }
+console.log(randomarray)
 //
 //
 
-for (let index = 0; index < randomarray; index++) {
+for (let index = 0; index < numberCards; index++) {
         let c = document.createElement('div')
         c.innerHTML = "Hallo "+ (index + 1)
         c.type = index % 2 + 1
