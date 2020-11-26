@@ -50,6 +50,7 @@ function flipp(event){
     if(!this.classList.contains('found'))
         openCard(this)
     //this.classList.toggle('flipped')
+    //Kartenlogik kommt hier rein
 }
 
 
