@@ -34,7 +34,6 @@ for (let index = 0; index < numberCards/2; index++) {
     cardTypes.push(index+1)
     cardTypes.push(index+1)
 }
-let p = document.querySelector('.deck')
 
 cardTypes = shuffle(cardTypes)
 let p = document.querySelector('.deck')
@@ -53,13 +52,42 @@ function flipp(event){
     if(!this.classList.contains('found'))
         openCard(this)
     //this.classList.toggle('flipped')
-    //Kartenlogik kommt hier rein
 }
 
 
 function openCard(c){
-    alert(c.innerHTML)
+
+   if(openedCards.length<2){
+        c.classList.toggle('flipped')
+        openedCards.push(c)
+        if(openedCards.length == 2){
+            if(openedCards[0].type == openedCards[1].type){
+                //alert('gleich')
+                window.setTimeout(
+                    ()=>{
+                        openedCards.pop().classList.toggle('found')
+                        openedCards.pop().classList.toggle('found')
+                    },
+                    1000
+                )
+            }
+
+            else{
+                //warten und wiederzurücksetzen
+                //alert('nicht gleich')
+                window.setTimeout(
+                    ()=>{
+                        openedCards.pop().classList.toggle('flipped')
+                        openedCards.pop().classList.toggle('flipped')
+                    },
+                    1000
+                )
+            }
+        }
+   }
 }
+
+
 
 function shuffle(arra1) {
     var ctr = arra1.length, temp, index;
