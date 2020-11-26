@@ -24,8 +24,8 @@ const randomarray = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
 for(let i = randomarray.length-1; i>0; i--){
     const j = Math.floor(Math.random() * i)
     const temp = randomarray[i]
-    array[i] = randomarray[j]
-    array[j] = temp
+    randomarray[i] = randomarray[j]
+    randomarray[j] = temp
   }
 
 
