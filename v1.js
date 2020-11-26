@@ -16,7 +16,7 @@ const numberCards = 16
 let openedCards = []
 
 let p = document.querySelector('.deck')
-
+//
 //2)
 //TODO: Array erzeugen mit durchmischten Karten (16 Karten, 8 Typen(1-8))
 const randomarray = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
@@ -27,11 +27,10 @@ for(let i = randomarray.length-1; i>0; i--){
     randomarray[i] = randomarray[j]
     randomarray[j] = temp
   }
+//
+//
 
-
-
-
-for (let index = 0; index < numberCards; index++) {
+for (let index = 0; index < randomarray; index++) {
         let c = document.createElement('div')
         c.innerHTML = "Hallo "+ (index + 1)
         c.type = index % 2 + 1
