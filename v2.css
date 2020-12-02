@@ -1,36 +1,49 @@
-/*
-.flex-container {
-  display: inline-flex;
-  background-color: white;
+
+.body{
+  background-color: #4FDEE8;
+  -ms-user-select: None; 
+  -moz-user-select: None; 
+  -webkit-user-select: None; 
+  user-select: None;
+}
+
+.container{
+  display: flex;
   justify-content: center;
-  width: 100%;
+  margin-top: 5%;
+}
+
+.deck{
+  width: 500px;
+  height: 500px;
   flex-wrap: wrap;
+  display: flex;
+}
 
-}
-  
-.flex-container > div {
-  background-color: green;
-  width: 20%;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 40px;
-  color: white;
-}
-*/
-  
 .card{
-  float: left;
-  width: 23%;
-  margin: 1%;
-  height: 24vw;
-  background-color:rgb(129, 41, 41);
+  background-color: #3E686B;
+  color: #3E686B;
+  width: auto;
+  height: auto;
+  flex: auto;
+  flex-basis: 20%;
+  margin: 2%;
+  text-align: center;
+  line-height: 100px;
+
+  transform-style: preserve-3d;
+  transition: 0.4s ease-in-out;
 }
+
 .flipped{
-  background-color:blue;
+  background-color: #464647;
 }
 
-.found{
-  background-color: red;
+.found {
+  visibility: hidden;
 }
 
+.card:active {
+  transform: scale(0.90);
+  transition: 0.2s;
+}

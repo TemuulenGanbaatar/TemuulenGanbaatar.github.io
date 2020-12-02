@@ -51,6 +51,7 @@ for (let index = 0; index < numberCards; index++) {
 function flipp(event){
     if(!this.classList.contains('found'))
         openCard(this)
+    
     //this.classList.toggle('flipped')
 }
 
