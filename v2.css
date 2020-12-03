@@ -10,12 +10,12 @@
 .container{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .deck{
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   flex-wrap: wrap;
   display: flex;
 }
@@ -23,13 +23,12 @@
 .card{
   background-color: #3E686B;
   color: #3E686B;
-  width: auto;
-  height: auto;
-  flex: auto;
-  flex-basis: 20%;
-  margin: 2%;
+  width: 22%;
+  height: 22%;
+
+  margin: 1%;
   text-align: center;
-  line-height: 100px;
+  line-height: 75px;
 
   transform-style: preserve-3d;
   transition: 0.4s ease-in-out;
